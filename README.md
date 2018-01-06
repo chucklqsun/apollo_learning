@@ -6,4 +6,5 @@
 * 一些思考
 
 ## 目录
-* release_note.md --- Apollo版本发布的新功能说明
+* release_note_cn.md --- Apollo版本发布的新功能说明
+* traffic_light_perception_cn.md --- 信号灯感知说明
