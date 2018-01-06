@@ -1,3 +1,6 @@
+
+[原版地址][original_url]
+
 #2.0发布
 
 这版本支持在简单的市郊路段自动驾驶。车辆能巡航并且躲避障碍物，在交通信号灯前停下，如果有必要会换道以到达目的地。  
@@ -45,3 +48,5 @@
 * 包含调试工具（modules/tools）
 ##自动驾驶能力
 这个版本的车辆**不能**感知近距离障碍物。也不能驾驶在公共道路或者没有GPS信号的区域。
+
+[original_url]: https://github.com/ApolloAuto/apollo/blob/master/RELEASE.md "Release Note"
