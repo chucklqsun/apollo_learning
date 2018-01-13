@@ -10,6 +10,6 @@
 2. sudo service lightdm stop
 3. docker start xxxx
 4. ./docker/script/dev_into.sh
-5.sudo ./NVIDIA-Linux-x86_64-375.39.run --no-opengl-files -a -s  //install driver
+5. sudo ./NVIDIA-Linux-x86_64-375.39.run --no-opengl-files -a -s  //install driver
 6. exit container and install Nvidia driver(same command above) on Host
 7. sudo reboot and enjoy!
