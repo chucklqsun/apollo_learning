@@ -8,8 +8,8 @@
 
 ## 文件路径:
 1. /modules/map/hdmap/adapter/opendrive_adapter.*
-1. /modules/map/hdmap/adapter/proto_organizer.*
-2. /modules/map/proto/*
+2. /modules/map/hdmap/adapter/proto_organizer.*
+3. /modules/map/proto/*
 
 ## 流水线:
 1. 将地图文件作为XML文件载入
