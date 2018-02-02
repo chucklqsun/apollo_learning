@@ -5,6 +5,12 @@
 3. sudo reboot
 4. Do Next Steps
 
+## If you are using Nouveau Driver
+Open “/etc/modprobe.d/blacklist.conf” file and add the following line. Save and close the file.
+```
+blacklist nouveau
+```
+
 ## Next Steps
 1. switch to tty1
 2. sudo service lightdm stop
