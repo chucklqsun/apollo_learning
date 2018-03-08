@@ -26,6 +26,8 @@ If there are no PCD files exported, please check the bag. It must have PointClou
 
 /apollo/sensor/velodyne64/PointCloud2  1321 msgs    : sensor_msgs/PointCloud2
 ```
+Using 'rosbag info <your bagfile>' to check your bag.
+In my trial, I use a bag named 'Apollo2.5_demo.bag' (currently named 'demo-sensor-demo-apollo-1.5.bag'), which is 9.59 Gigabytes.
 
 1.3 Generate Pose files
 We provide a Python script `gen_pose_file.py` to generate the Pose files from `pose.txt`.
