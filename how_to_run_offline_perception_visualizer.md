@@ -22,6 +22,8 @@ When playing the bag, the PCD files will be dumped to the export directory (defa
 **Notice:**  
 If there are no PCD files exported, please check the bag. It must have PointClouds output, like below:
 ```
+# rosbag info demo-sensor-demo-apollo-1.5.bag
+
 /apollo/sensor/velodyne64/PointCloud2  1321 msgs    : sensor_msgs/PointCloud2
 ```
 
