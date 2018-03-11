@@ -131,7 +131,7 @@ message PointENU {
 Apollo自己定制了地图数据结构，但是我也没找到合适的工具能编辑他们家地图格式，希望了解这方面工具的同学能提供帮助。
 
 查看地图工具：
-modules/tools/mapshow/mapshow.py -m modules/map/data/sunnyvale_loop/base_map.xml
+modules/tools/mapshow/mapshow.py -m modules/map/data/sunnyvale_loop/base_map.bin
 
 ![alter text][sunnyvale_loop]
 
