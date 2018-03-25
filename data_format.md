@@ -33,7 +33,14 @@ Quaternion 3
 -------------000020.txt begin----------------  
 21 1
 0 6 smallMot -53.46683058 25.45495444 -2.484871868 2.023377419 0.6376290917 0.6222643852 1.563876054 0 0 0 0 0 9 86733 86787 86841 86896 87278 87332 87384 87438 87980  
--------------000020.txt end------------------  
+-------------000020.txt end------------------
+
+#### Color of Obstacles by bounding boxes
+[perception introduction](ref1)
+1. smallMot: car (green)
+2. nonMot: cyclist (blue)
+3. pedestrain: pedestrian (pink)
+4. unknown: unknown (purple)
 
 #### Notes:
 **File Name**:  
@@ -47,7 +54,7 @@ object id per frame, from 0
 * **trackId**:  
 object track id in the track list, from 0
 * **objType**:  
-pedestrain, smallMot, nonMot  
+pedestrain, smallMot, nonMot, unknown
 * **ctVelo0**:  
 center of objects:x, precision is 10
 * **ctVelo1**:  
@@ -74,3 +81,5 @@ quantity of point cloud for the object
 indices of resultant, int, nearest k search for 1
 * **endl**:  
 break, end of line
+
+[ref1]: http://apollo.auto/platform/perception.html (Perception introduction)
