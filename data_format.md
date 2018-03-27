@@ -1,3 +1,5 @@
+## LiDAR
+[velodyne64](ref3)
 ### pose file:
 #### Format:
 [frameId] [timeStamp] [pos0] [pos1] [pos2] [quat0] [quat1] [quat2] [quat3]
@@ -82,4 +84,43 @@ indices of resultant, int, nearest k search for 1
 * **endl**:  
 break, end of line
 
-[ref1]: http://apollo.auto/platform/perception.html (Perception introduction)
+## Radar
+Here is continental radar(another is ultrasonic radar), refers to [message](ref2)
+topic name: /apollo/sensor/conti_radar data type: apollo::drivers::ContiRadar channel ID: CHANNEL_ID_ONE
+### Radar Pose file
+#### Format:
+[frameId] [timeStamp] [pos0] [pos1] [pos2] [quat0] [quat1] [quat2] [quat3]
+
+#### Example pose file (Dump from Apollo1.5_demo.bag):  
+-------------1513807884.3730705.pose begin----------------  
+789 1513807884.37307 587135.025097686 4141195.309519918 -31.79241004701922 -0.001084891613572836 0.007616758346557617 -0.1053255498409271 0.9944080710411072
+-------------1513807884.3730705.pose end------------------  
+
+#### Notes
+same as pose file
+
+### Radar Velocity file
+#### Format:
+[frameId] [timeStamp] [carLinearVelocityX] [carLinearVelocityY] [carLinearVelocityZ]
+#### Example pose file (Dump from Apollo1.5_demo.bag):  
+-------------1513807884.3730705.velocity begin----------------  
+789 1513807884.37307 -0.07548268139362335 -0.1518359482288361 -0.016117874532938
+-------------1513807884.3730705.velocity end------------------  
+
+#### Notes
+**File Name**:  
+begin with timeStamp + .velocity
+* **frameId**:  
+frame id, is not from 1 (in 2.0 bag from 4), but continuous
+* **timeStamp**:  
+precision is less than file name
+* **carLinearVelocityX**
+car linear speed from localisation: x
+* **carLinearVelocityY**
+car linear speed from localisation: y
+* **carLinearVelocityZ**
+car linear speed from localisation: z
+
+[ref1]: http://apollo.auto/platform/perception.html (Perception Introduction)
+[ref2]: https://github.com/ApolloAuto/apollo/blob/master/modules/drivers/proto/conti_radar.proto (Radar Message)
+[ref3]: https://github.com/ApolloAuto/apollo/blob/master/modules/drivers/velodyne/README_cn.md (velodyne64)
