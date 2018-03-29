@@ -11,7 +11,7 @@ Apollo障碍物感知包括基于LiDAR和基于雷达的障碍物感知，融合
 2. 后者可以保存results，前者不行（需要代码改造）
 3. bag里有两个摄像头的image数据，是否有可能做到三者融合？(如何导出image数据)
 4. 前者是以timestamp作为文件名，后者是frame id作为文件名
-5. Radar数据还需要进一步研究其格式
+5. Radar数据还需要进一步研究其[格式](ref3)
 
 ## 相关参考文章
 1. [感知介绍](ref1)
@@ -19,3 +19,4 @@ Apollo障碍物感知包括基于LiDAR和基于雷达的障碍物感知，融合
 
 [ref1]: http://apollo.auto/platform/perception.html "Apollo Perception Introduction"
 [ref2]: https://github.com/ApolloAuto/apollo/blob/master/docs/howto/how_to_run_offline_sequential_obstacle_perception_visualizer.md "offline sequential obstacle perception visualizer"
+[ref3]: ./radar_protobuf.md "radar protobuf details"
