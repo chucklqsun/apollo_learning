@@ -19,3 +19,7 @@ blacklist nouveau
 5. sudo ./NVIDIA-Linux-x86_64-375.39.run --no-opengl-files -a -s  //install driver
 6. exit container and install Nvidia driver(same command above) on Host
 7. sudo reboot and enjoy!
+
+## Docker gcc version issue
+* Root cause: docker may use gcc-4.8, which cannot install NVIDIA driver(build kernel failed).
+* Solution: apt-get intall gcc-4.9 in docker and change the softlink of gcc under /usr/bin to gcc-4.9, install driver and restore the softlink back to gcc-4.8

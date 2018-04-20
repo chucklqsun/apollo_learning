@@ -38,6 +38,8 @@ python gen_pose_file.py /apollo/data/pcd
 The names of the generated Pose files correspond to their frame numbers as the PCD files. It means that the names of PCD and Pose files for a frame is the same but have different extension names (i.e., .pcd and .pose respectively).  
 
 ### 2. Build The Offline Perception Visualizer
+Before compile the tool, make sure you have run "apollo.sh build_opt_gpu" before it. (This step could build cuda related lib)
+
 We use Bazel to build the offline perception visualizer.
 ```
 cd /apollo
