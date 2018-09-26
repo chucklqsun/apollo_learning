@@ -20,6 +20,8 @@ rosbag play --clock example.bag
 When playing the bag, the PCD files will be dumped to the export directory (defalut: `/apollo/data/pcd`). The extracted PCD files are named according to their frame numbers which correspond to the order of playing the recorded messages from the point cloud ROS topic (e.g., `/apollo/sensor/velodyne64/compensator/PointCloud2`). In addition, there are two other files (`stamp.txt` and `pose.txt`) generated in the export directory. They will be used to generate the Pose file for each frame.
 
 **Notice:**  
+Must close "export_pcd_offline.launch" after PCD dumping. Otherwise, pose.txt will be incomplete.
+
 If there are no PCD files exported, please check the bag. It must have PointClouds output, like below:
 ```
 # rosbag info demo-sensor-demo-apollo-1.5.bag

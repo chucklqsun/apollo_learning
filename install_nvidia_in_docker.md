@@ -10,6 +10,15 @@ Open “/etc/modprobe.d/blacklist.conf” file and add the following line. Save 
 ```
 blacklist nouveau
 ```
+## Other blacklist method
+```
+$ cat /etc/modprobe.d/blacklist-nvidia-nouveau.conf
+
+blacklist nouveau
+options nouveau modeset=0
+
+sudo update-initramfs -u
+```
 
 ## Next Steps
 1. switch to tty1
@@ -22,4 +31,5 @@ blacklist nouveau
 
 ## Docker gcc version issue
 * Root cause: docker may use gcc-4.8, which cannot install NVIDIA driver(build kernel failed).
-* Solution: apt-get intall gcc-4.9 in docker and change the softlink of gcc under /usr/bin to gcc-4.9, install driver and restore the softlink back to gcc-4.8
+* I found gcc version is related to the Linux kernel, which maybe 4.9 or 5.0, try both if modprobe load nvidia.ko fail!
+* Solution: apt-get install gcc-4.9 or gcc-5 in docker and change the softlink of gcc under /usr/bin to gcc-4.9 or gcc-5, install driver and restore the softlink back to gcc-4.8
