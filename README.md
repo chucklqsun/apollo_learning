@@ -12,4 +12,4 @@
 * opendrive_adapter.md -- 高精地图格式说明
 * lidar_process_hdmap.md -- Apollo感知处理系列(高精地图)
 * get_roi.md -- Apollo感知处理系列(获取ROI区域)
-* data_format.md -- 目前有LiDAR的电云，Radar的文件格式解释
+* data_format.md -- 目前有LiDAR的点云，Radar的文件格式解释
